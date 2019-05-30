@@ -1,0 +1,31 @@
+{
+  "name": "perrierdroomer",
+  "version": "1.0.0",
+  "description": "Conygre Training",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build-aws-resource":"pack-zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LostShepherd/PerrierDroomer.git"
+  },
+  "keywords": [
+    "Perrier",
+    "Drromer"
+  ],
+  "author": "Perrier Droomer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LostShepherd/PerrierDroomer/issues"
+  },
+  "homepage": "https://github.com/LostShepherd/PerrierDroomer#readme",
+  "dependencies": {
+    "http": "0.0.0"
+  },
+  "devDependencies": {
+    "pack-zip": "^0.2.2"
+  }
+}
