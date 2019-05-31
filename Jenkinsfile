@@ -25,7 +25,7 @@ pipeline {
             echo 'Deploying....'
             sh "ls -la"
             sh "pwd"
-            sh "aws s3 cp server.js s3://barnacleboyandmermaidman.s3-us-west-1.amazonaws.com"
+            sh "aws s3 cp server.js s3://barnacleboyandmermaidman.s3-us-west-1.amazonaws.com/server.js"
         }
     }
 
