@@ -23,7 +23,7 @@ pipeline {
   stage('Deploy') {
         steps {
             echo 'Deploying....'
-            sh "aws s3 cp /server.js s3://barnacleboyandmermaidman.s3-us-west-1.amazonaws.com/server.js"
+            sh "aws s3 cp server.js s3://barnacleboyandmermaidman.s3-us-west-1.amazonaws.com/server.js"
         }
     }
 
