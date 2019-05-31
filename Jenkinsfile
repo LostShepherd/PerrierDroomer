@@ -13,14 +13,18 @@ pipeline {
       }
     }
 
-
-
-
      stage('Package') {
 
       steps {
         sh  "npm run build-aws-resource"
       }
+    }
+    
+  stage('Deploy') {
+        steps {
+            echo 'Deploying....'
+            sh "aws s3 cp server.js https://barnacleboyandmermaidman.s3-us-west-1.amazonaws.com/server.js"
+        }
     }
 
 
